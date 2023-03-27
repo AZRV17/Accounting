@@ -1,0 +1,20 @@
+﻿<Window x:Class="Budget.TypeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Budget"
+        mc:Ignorable="d"
+        Title="TypeWindow" Height="100" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" x:Name="NewTypeTextBox" Text="Новый тип заметки"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="AddTypeButton" Grid.Row="1" Content="Добавить" Margin="10 0 0 0" Click="AddTypeButton_OnClick"/>
+            <Button x:Name="CancelTypeButton" Grid.Row="1" Content="Отменить" Margin="10 0 0 0" Click="CancelTypeButton_OnClick"/>
+        </StackPanel>
+    </Grid>
+</Window>
